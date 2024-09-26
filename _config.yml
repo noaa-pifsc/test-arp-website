@@ -17,17 +17,17 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+title                    : "NOAA | NMFS | PIFSC | ESD | Archipelagic Research Program"
+title_separator          : "|"
+subtitle                 : "Centralized Webpage for ARP Resources"
+name                     : "Lori Luers"
+description              : "Mock-up of centralized ARP website"
+url                      : #"https://noaa-pifsc.github.io/test-arp-website"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : # noaa-pifsc/test-arp-website
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+logo                     : # "/assets/images/noaa_masthead.png"
+masthead_title           : #"PIFSC | ESD | ARP
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
@@ -113,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Lori Luers"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Applications Developer"
+  location         : "Honolulu"
   email            :
   links:
     - label: "Email"
@@ -231,30 +231,38 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Pagination with jekyll-paginate
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+#paginate: 5 # Number of items per page
+#paginate_path: "/publications/page:num" # Path for pagination
 
 # Pagination with jekyll-paginate-v2
 # See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
 #   for configuration details
-pagination:
+# pagination:
   # Set enabled to true to use paginate v2
   # enabled: true
-  debug: false
-  collection: 'posts'
-  per_page: 10
-  permalink: '/page/:num/'
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  category: 'posts'
-  tag: ''
-  locale: ''
-  trail:
-    before: 2
-    after: 2
+  # debug: false
+  # collection: 'posts'
+  # per_page: 10
+ #  permalink: '/page/:num/'
+  # title: ':title - page :num'
+  # limit: 0
+  # sort_field: 'date'
+  # sort_reverse: true
+  # category: 'posts'
+  # tag: ''
+  # locale: ''
+  # trail:
+    # before: 2
+    # after: 2
 
+pagination:
+  enabled: true
+  per_page: 5 # Number of items per page
+  collections: true
+
+collections:
+  pifsc_publications:
+    output: true
 
 # Plugins (previously gems:)
 plugins:
@@ -263,6 +271,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-data
 
 # mimic GitHub Pages with --safe
 whitelist:
