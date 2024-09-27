@@ -17,9 +17,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "NOAA | NMFS | PIFSC | ESD | Archipelagic Research Program"
+title                    : "NOAA | [LINE] | [Science Center] | [Division] | [Program Title]"
 title_separator          : "|"
-subtitle                 : "Centralized Webpage for ARP Resources"
+subtitle                 : "Mock template: centralized resources website for programs"
 name                     : "Lori Luers"
 description              : "Mock-up of centralized ARP website"
 url                      : #"https://noaa-pifsc.github.io/test-arp-website"
